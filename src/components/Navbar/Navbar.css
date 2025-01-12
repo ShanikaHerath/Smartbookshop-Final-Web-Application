@@ -1,0 +1,134 @@
+/* Navbar Base Styles */
+.header1 {
+    background-color: #005f86; /* Dark background for modern look */
+    color: #ffffff; /* Text color */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header1 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #d1d1d1; /* Light gray for contact text */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-item span {
+    color: #ffffff;
+}
+
+.contact-item svg {
+    color: #ff9800; /* Highlight icons with an accent color */
+}
+
+/* Navigation Bar Styles */
+.header1 .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header1 .top-bar p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    color: #d1d1d1;
+}
+
+.header1 .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header1 .nav-links li {
+    margin: 0 15px;
+}
+
+.header1 .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header1 .nav-links li a:hover {
+    color: #ff9800;
+}
+
+/* Icon and Chatbot Styles */
+.nav-links.user-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.user-icon:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+.chatbot-container {
+    margin-left: 15px;
+}
+
+.header1 .nav-links li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header1 .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+}
+/* Add this to your existing Navbar.css */
+
+.contact-info a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Keeps the color of the text (so it stays the same as the rest) */
+    transition: color 0.3s ease; /* Optional: adds a smooth transition effect on hover */
+}
+
+.contact-info a:hover {
+    color: #ff9800; /* Optional: change color on hover (you can choose a color) */
+}
+

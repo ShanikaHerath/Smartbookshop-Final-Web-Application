@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Light background for contrast */
+}
+
+/* Main container for centering the welcome content */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+    background: linear-gradient(135deg, #87CEFA, #1E90FF); /* Light blue to navy blue gradient */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Content styling */
+.welcome-content {
+    text-align: center;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px; /* Responsive max width */
+    animation: fadeIn 0.5s ease-in-out; /* Animation */
+    transition: transform 0.3s ease;
+}
+
+/* Header styling */
+.welcome-content h1 {
+    margin: 0 0 20px;
+    font-size: 32px; /* Larger font size */
+    color: #333;
+}
+
+/* Paragraph styling */
+.welcome-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.btn-welcome {
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1E90FF; /* Navy blue */
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-welcome:hover {
+    background-color: #0c7db2; /* Darker navy blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}

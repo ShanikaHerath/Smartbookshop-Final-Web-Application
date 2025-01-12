@@ -1,0 +1,160 @@
+/* General reset and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .signup-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .signup-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .signup-container .message {
+    margin: 15px 0;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .signup-container .message.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .signup-container .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .signup-form,
+  .otp-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form .form-group,
+  .otp-container .otp-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .signup-form label,
+  .otp-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .signup-form input,
+  .otp-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+  }
+  
+  .signup-form input:focus,
+  .otp-container input:focus {
+    outline: none;
+    border-color: #4e8cff;
+  }
+  
+  .signup-form button,
+  .otp-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4e8cff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signup-form button:hover,
+  .otp-container button:hover {
+    background-color: #3570d1;
+  }
+  
+  .signup-form button {
+    background-color: #28a745;
+  }
+  
+  .signup-form button:hover {
+    background-color: #218838;
+  }
+  
+  .otp-container {
+    margin-top: 20px;
+  }
+  
+  .otp-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .otp-container input:focus {
+    outline: none;
+    border-color: #4e8cff;
+  }
+  
+  /* Media Query for mobile responsiveness */
+  @media (max-width: 600px) {
+    .signup-container {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .signup-container h1 {
+      font-size: 20px;
+    }
+  }.note {
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    padding-right: 40px; /* Space for the icon */
+  }
+  
+  .input-with-icon i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .input-with-icon i:hover {
+    color: #000;
+  }
+  
+  
+  

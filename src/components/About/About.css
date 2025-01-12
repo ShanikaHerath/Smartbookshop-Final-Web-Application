@@ -1,0 +1,156 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #5dbaf8; /* Light background for contrast */
+    color: #333;
+}
+
+/* Main container */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* For sliding effects */
+}
+
+/* Content styling */
+.about-content {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Responsive max width */
+    transform: translateY(50px); /* Initial position for sliding */
+    opacity: 0; /* Initial opacity for fade-in */
+    animation: slideUpFadeIn 1s ease-out forwards; /* Animation */
+}
+
+/* Header styling */
+.about-content h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+    position: relative; /* For highlighting effect */
+}
+
+.about-content h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #0077b6; /* Navy blue */
+    bottom: -10px;
+    left: 0;
+    transform: scaleX(0); /* Initial state for highlighting */
+    transform-origin: bottom right; /* Origin for highlighting animation */
+    animation: highlight 1s ease-out forwards 0.5s; /* Animation with delay */
+}
+
+/* Subheader styling */
+.about-content h2 {
+    font-size: 24px;
+    color: #0077b6; /* Navy blue */
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1s; /* Fade-in with delay */
+}
+
+/* Paragraph styling */
+.about-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1.5s; /* Fade-in with delay */
+}
+
+/* Map container styling */
+.map-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn-order-now {
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077b6; /* Navy blue */
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 2s; /* Fade-in with delay */
+}
+
+.btn-order-now:hover {
+    background-color: #005f86; /* Darker navy blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Keyframe animations */
+@keyframes slideUpFadeIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes highlight {
+    to {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content h2 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content h2 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    
+    }
+}

@@ -1,0 +1,220 @@
+/* Login.css */
+body {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    align-items: center;
+    color: #fff;
+}
+
+/* Main container for centering the form */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+}
+
+/* Form styling */
+.login-form {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px; /* Responsive max width */
+    animation: fadeIn 0.5s ease-in-out; /* Animation */
+    transition: transform 0.3s ease;
+}
+
+/* Header styling */
+.login-form h1 {
+    margin: 0 0 20px;
+    font-size: 28px; /* Larger font size */
+    color: #333;
+    text-align: center;
+    position: relative; /* For pseudo-element */
+}
+
+.login-form h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1E90FF; /* Navy blue underline */
+    margin: 10px auto 0;
+    border-radius: 5px; /* Rounded underlining */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    
+}
+
+/* Input styling */
+/* Centered input field */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px; /* Add some space below the input */
+}
+
+/* Input focus state */
+input:focus {
+    border-color: #1E90FF; /* Navy blue border on focus */
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.login-button, .forgot-password-button, .close-modal-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1E90FF; /* Navy blue */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative; /* For pseudo-element */
+    overflow: hidden; /* To contain pseudo-element */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover, .forgot-password-button:hover, .close-modal-button:hover {
+    background-color: #0c7db2; /* Darker navy blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Button hover effect */
+.login-button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 300%; /* Stretch for effect */
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-50%) translateY(0);
+    transition: transform 0.4s ease; /* Smooth animation */
+}
+
+.login-button:hover::after {
+    transform: translateX(-50%) translateY(100%); /* Slide down effect */
+}
+
+.forgot-password-button {
+    background-color: transparent;
+    color: #1E90FF; /* Navy blue */
+    border: 2px solid #1E90FF; /* Navy blue border */
+    margin-top: 10px;
+}
+
+.forgot-password-button:hover {
+    background-color: rgba(30, 144, 255, 0.1);
+}
+
+/* Modal styling for the forgot password feature */
+.forgot-password-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    animation: fadeIn 0.5s ease-in-out; /* Animation for modal */
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Message styling for reset link */
+.reset-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #1E90FF; /* Navy blue */
+}
+
+.signup-link a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-container input {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #1E90FF; /* Highlight color for the eye icon */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Keep modal styles the same */
