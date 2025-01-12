@@ -24,16 +24,16 @@ const Navbar = () => {
                         <div className="contact-item">
                         <FaPhoneAlt size={18} />
 
-                            <a href="tel:+94752439487" title="Call Us">
-                                <span>(+94) 752-4394-87</span>
+                            <a href="123456789" title="Call Us">
+                                <span> 123456789</span>
                             </a>
                         </div>
                         <div className="contact-item">
                         <FaEnvelope size={18} />
 
-                            <a href="mailto:tharukabookshop@gmail.com" title="Email Us">
-                                <span>tharukabookshop@gmail.com</span>
-                            </a>
+                            <a href="bookshop@gmail.com" title="Email Us">
+                                <span>bookshop@gmail.com</span>
+                          </a>
                         </div>
                         <div className="contact-item">
                         <FaMapMarkerAlt size={18} />
@@ -44,7 +44,7 @@ const Navbar = () => {
                                 rel="noopener noreferrer"
                                 title="View on Map"
                             >
-                                <span>Melsiripura, Kurunegala, Sri Lanka</span>
+                                <span>Location</span>
                             </a>
                         </div>
                     </div>
